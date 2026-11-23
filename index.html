@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Norma Coffe — Company Profile &amp; Katalog</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- 1. Navbar Responsif -->
+  <nav class="navbar navbar-expand-lg navbar-dark norma-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Norma Coffe</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navNormaCoffe"
+        aria-controls="navNormaCoffe"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navNormaCoffe">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="#paket">Daftar Paket</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. Hero Section -->
+  <header id="hero" class="hero-box py-5">
+    <div class="container py-lg-4">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-8">
+          <span class="badge norma-badge mb-2">Norma Coffe &amp; Roastery</span>
+          <h1 class="display-5 fw-bold mb-3">Norma Coffe</h1>
+          <p class="lead mb-4">
+            Menghadirkan racikan kopi pilihan dan biji sangrai berkualitas untuk
+            pelanggan harian, acara, serta mitra bisnis dengan tata letak
+            responsif lintas ukuran layar.
+          </p>
+          <div class="d-flex flex-column flex-sm-row gap-2">
+            <a href="#produk" class="btn btn-norma btn-lg">Jelajahi Produk</a>
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#modalInfo"
+            >
+              Lihat Promo &amp; Mitra
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+
+      <!-- 4. Alert -->
+      <div class="alert norma-alert alert-dismissible fade show mb-5" role="alert">
+        <strong>Info Promo Norma Coffe:</strong> Diskon 15% untuk pembelian paket
+        biji kopi atau konsultasi suplai mitra bulan ini.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Tutup"></button>
+      </div>
+
+      <!-- 3. Minimal 3 Card (Grid Breakpoint: col-12 -> col-md-6 -> col-lg-4) -->
+      <section id="produk" class="mb-5">
+        <h2 class="fw-bold mb-4 norma-heading">Produk Unggulan</h2>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 norma-card">
+              <img
+                src="Images/photo1.webp"
+                class="card-img-top norma-thumb"
+                alt="Foto Produk Norma Coffe Gayo Arabica"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Norma Coffe Gayo Arabica</h5>
+                <p class="card-text flex-grow-1">
+                  Biji kopi arabika pilihan dengan karakter seimbang, aroma karamel,
+                  dan rasa akhir yang bersih.
+                </p>
+                <span class="fw-bold norma-price">Rp85.000 / 250g</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 norma-card">
+              <img
+                src="Images/photo2.webp"
+                class="card-img-top norma-thumb"
+                alt="Foto Produk Kopi Susu Norma Coffe"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Kopi Susu Norma Coffe</h5>
+                <p class="card-text flex-grow-1">
+                  Perpaduan espresso segar, susu pilihan, dan gula aren alami yang
+                  pas untuk sajian harian maupun acara.
+                </p>
+                <span class="fw-bold norma-price">Rp22.000 / cup</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 norma-card">
+              <img
+                src="Images/photo3.jfif"
+                class="card-img-top norma-thumb"
+                alt="Foto Produk Suplai Mitra dan Kedai Norma Coffe"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Suplai Mitra &amp; Kedai</h5>
+                <p class="card-text flex-grow-1">
+                  Pasokan rutin biji kopi sangrai dan dukungan profil rasa untuk
+                  kedai, kantor, maupun mitra usaha.
+                </p>
+                <span class="fw-bold norma-price">Mulai Rp1.200.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tabel Responsif (Container + Grid + Table) -->
+      <section id="paket" class="mb-5">
+        <h2 class="fw-bold mb-3 norma-heading">Ringkasan Paket &amp; Harga</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered align-middle norma-table">
+            <thead>
+              <tr>
+                <th>Paket</th>
+                <th>Target</th>
+                <th>Estimasi Harga</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Retail Beans (250g)</td>
+                <td>Pelanggan Rumahan</td>
+                <td>Rp85.000</td>
+              </tr>
+              <tr>
+                <td>Event Pack (25 Cup)</td>
+                <td>Rapat &amp; Komunitas</td>
+                <td>Rp520.000</td>
+              </tr>
+              <tr>
+                <td>Partner Roastery</td>
+                <td>Kedai &amp; Mitra Bisnis</td>
+                <td>Rp1.200.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 6. Form Kontak -->
+      <section id="kontak">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="card norma-card p-4">
+              <h2 class="fw-bold mb-3 norma-heading">Form Kontak</h2>
+              <form>
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <label for="nama" class="form-label">Nama</label>
+                    <input type="text" id="nama" class="form-control" placeholder="Nama lengkap" required />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="nama@email.com" required />
+                  </div>
+                  <div class="col-12">
+                    <label for="pesan" class="form-label">Pesan / Kebutuhan</label>
+                    <textarea id="pesan" rows="3" class="form-control" placeholder="Tulis pesan Anda..." required></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-norma">Kirim Pesan</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- 5. Modal -->
+  <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="modalInfoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="modalInfoLabel">Promo &amp; Kerja Sama Norma Coffe</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        </div>
+        <div class="modal-body">
+          Dapatkan diskon 15% untuk paket awal serta sesi pencocokan profil rasa
+          untuk calon mitra kedai dan pesanan acara di Norma Coffe.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <a href="#kontak" class="btn btn-norma" data-bs-dismiss="modal">Hubungi Kami</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. Footer -->
+  <footer class="norma-footer py-4 text-white">
+    <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
+      <span><strong>Norma Coffe</strong> — Pertemuan 9 Desain Web</span>
+      <span class="small">&copy; 2026 Norma Coffe</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

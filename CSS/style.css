@@ -1,0 +1,86 @@
+:root {
+  --bg-cream: #f8f4ee;
+  --dark-roast: #241710;
+  --medium-roast: #462c1d;
+  --accent-caramel: #b56d2a;
+  --accent-hover: #96561c;
+  --soft-sand: #efe5d8;
+}
+
+body {
+  background-color: var(--bg-cream);
+  color: var(--dark-roast);
+}
+
+.norma-nav,
+.norma-footer {
+  background-color: var(--dark-roast);
+}
+
+.hero-box {
+  background: linear-gradient(135deg, var(--dark-roast), var(--medium-roast));
+  color: #fff8f0;
+  padding-top: 2.25rem !important;
+  padding-bottom: 2.25rem !important;
+}
+
+.norma-badge {
+  background-color: rgba(181, 109, 42, 0.25);
+  color: #ffd8b0;
+  border: 1px solid rgba(255, 216, 176, 0.4);
+}
+
+.btn-norma {
+  background-color: var(--accent-caramel);
+  color: #ffffff;
+  border: none;
+}
+
+.btn-norma:hover,
+.btn-norma:focus {
+  background-color: var(--accent-hover);
+  color: #ffffff;
+}
+
+.norma-alert {
+  background-color: var(--soft-sand);
+  color: var(--dark-roast);
+  border-color: var(--accent-caramel);
+}
+
+.norma-heading,
+.norma-price {
+  color: var(--medium-roast);
+}
+
+.norma-card {
+  border: 1px solid #e3d5c3;
+  border-radius: 10px;
+}
+
+.norma-thumb,
+.norma-fallback {
+  height: 165px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.norma-fallback {
+  background-color: var(--medium-roast);
+  color: #fff8f0;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+}
+
+.norma-table thead th {
+  background-color: var(--medium-roast);
+  color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .hero-box h1 {
+    font-size: 2rem;
+  }
+}
