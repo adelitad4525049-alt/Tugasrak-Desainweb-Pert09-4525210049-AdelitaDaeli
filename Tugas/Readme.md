@@ -31,7 +31,7 @@ Proyek ini dikerjakan secara mandiri sebagai **Tugas Individu**, mulai dari pera
 ## Dokumentasi Hasil Website
 
 ### Tampilan Desktop
-![Tampilan Desktop](Dokumentasi/Gambar%20hasil%20Desktop.jpeg)
+![Tampilan Desktop](Dokumentasi/Desktop.jpeg)
 
 ### Tampilan Mobile
-![Tampilan Mobile](Dokumentasi/Gambar%20hasil%20mobile.jpeg)
+![Tampilan Mobile](Dokumentasi/Mobile.png)
